@@ -1,0 +1,368 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  select,
+  select[multiple] {
+    @apply text-lg py-2 px-5  border border-gray-300 focus:border-blue-600 focus:ring-blue-600 rounded-full;
+  }
+
+  textarea {
+    @apply text-lg py-2 px-5  border border-gray-300 focus:border-blue-600 focus:ring-blue-600 rounded-3xl;
+  }
+
+  [type="checkbox"],
+  [type="radio"] {
+    @apply text-blue-600 focus:border-blue-600 focus:ring-blue-600 h-5 w-5;
+  }
+  [type="checkbox"] {
+    @apply rounded;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+/* -0--------home section----- */
+
+.button-filter {
+  border: 1px solid black !important;
+  border-radius: 20px !important;
+  background-color: white !important;
+  color: black !important;
+  margin-left: 0.3rem !important;
+  margin-right: 0.3rem !important;
+}
+
+.button-filter:hover {
+  border: 1px solid black !important;
+  border-radius: 20px !important;
+  background-color: black !important;
+  color: white !important;
+  margin-left: 0.3rem !important;
+  margin-right: 0.3rem !important;
+}
+
+.footer-li {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+.link-text {
+  text-decoration: none;
+  color: black;
+}
+.link-text:hover {
+  text-decoration: none;
+  color: pink;
+}
+
+.margin-top-small {
+  margin-top: 2rem;
+}
+.custom-file-input {
+  color: transparent;
+  margin-right: -12rem;
+  margin-left: -0.4rem;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Manually Upload";
+  color: black;
+  display: inline-block;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+
+  font-size: 12pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.upload-file-container {
+  margin-top: 2rem;
+  color: grey;
+  border-style: dotted;
+  background-color: rgb(238, 238, 238);
+  border-color: rgb(224, 224, 224);
+  border-radius: 20px;
+  padding: 5%;
+}
+
+.font-size-text {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.button-style-2 {
+  background-color: #121212 !important;
+  color: white !important;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border: 1px solid black !important;
+  border-radius: 12px;
+}
+
+.box-shadow {
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px rgb(230, 230, 230);
+}
+
+.button-style {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+  border-radius: 10px;
+  /* margin-top: 10px; */
+}
+
+.button-style2 {
+  background-color: #121212 !important;
+  color: white !important;
+  border: 1px solid black !important;
+  border-radius: 10px;
+  /* margin-top: 10px; */
+}
+
+.text-style-blog {
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2)
+      format("woff2"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff)
+      format("woff"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf)
+      format("truetype"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf)
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2)
+      format("woff2"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff)
+      format("woff"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf)
+      format("truetype"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2)
+      format("woff2"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff)
+      format("woff"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf)
+      format("truetype"),
+    url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf)
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.search-box {
+  font-size: 20px;
+  padding: 2px 2px;
+  border: 1px solid #c1c1c1;
+  background-color: white;
+  width: 15rem;
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-right: 1rem;
+}
+
+.search-box:hover {
+  border-color: #aaaaaa;
+}
+
+.search-box:focus-within {
+  border-color: #ff0080;
+  box-shadow: 0 0 0 5px rgba(255, 0, 128, 0.4);
+}
+
+input {
+  font-family: Proxima Nova;
+  letter-spacing: -0.2px;
+  font-size: 30px;
+  border: none;
+  color: #323232;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.clear:not(:valid) ~ .search-clear {
+  display: none;
+}
+
+.login-left {
+  margin-top: 12rem;
+  margin-left: 7rem;
+}
+
+.input-filed {
+  border: 1px solid grey;
+  padding: 3%;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  width: 20rem;
+}
+
+.input-filed2 {
+  border: 1px solid grey;
+  padding: 2%;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  width: 25rem;
+}
+.login-button {
+  background-color: #121212;
+  border-radius: 20px;
+  color: white;
+  padding: 8px;
+  width: 100%;
+}
+.login-button2 {
+  background-color: #121212;
+  border-radius: 20px;
+  color: white;
+  padding: 8px;
+  width: 25rem;
+}
+/* .login-button3{
+  background-color: #121212;
+  border-radius: 20px;
+  color: white;
+  padding: 8px;
+  width: 25rem;
+} */
+
+.stat-card {
+  @apply rounded-md p-5 text-slate-800 text-center;
+}
+
+
+
+
+
+
+
+
+/* Slideshow */
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  /*max-width: 500px;*/
+  max-width: calc(100vw - 20%);
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  background-color: #6a0dad;
+}
+
+
+.just-bg-img{
+  background-image: url("https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80");
+}
