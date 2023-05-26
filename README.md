@@ -11,7 +11,8 @@ vacancies.
 Enables users to conduct virtual interviews or meetings with potential employers or employees directly within the app.
 Sends users customized notifications based on their activity within the app, such as new job opportunities or networking events in their areas
 
-We made a app and also a website, here is the demo of our app:
+Made a app and also a website
+Demo:
 
 
 
